@@ -1,0 +1,29 @@
+$text: #999;
+$head: #333333;
+$red: #f38181;
+$yellow: #fce38a;
+$green: #eaffd0;
+$blue: #95e1d3;
+
+@mixin rf300i{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+@mixin rf400{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+@mixin mf400{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+@mixin mf700{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+@mixin kf400{
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+}
+
