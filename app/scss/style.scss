@@ -2,8 +2,161 @@
 @import "global";
 @import "fonts";
 
+.header__inner{
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header__logo{
+  color: #fff;
+  @include mf700;
+  font-size: 30px;
+  margin-bottom: 11px;
+  transition: .3s;
+  &:hover{
+    color: $yellow;
+  }
+}
+.header__menu{
+  margin-right: 23px;
+  margin-left: auto;
+  li{
+    display: inline-block;
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+  a{
+    @include mf400;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+    transition: .3s;
+    &:hover,
+    &:focus{
+      color: $yellow;
+      border-bottom: 3px solid $yellow;
+    }
+  }
+}
+.header__shopping-cart{
+  margin-right: 40px;
+  margin-bottom: 11px;
+  &:hover path,
+  &:focus path{
+    fill: $yellow;
+  }
+}
+.header__search{
+  margin-right: 0;
+  margin-bottom: 11px;
+   &:hover path,
+   &:focus path{
+    fill: $yellow;
+  }
+}
 
+// INTRO
+.intro__bg{
+  padding-top: 220px;
+  margin-top: -65px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-bottom: 85px;
+}
+.intro__inner{
+  text-align: center;
+}
+.intro__suptitle{
+  color: #fff;
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+.intro__title{
+  color: #fff;
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 140px;
+  margin-bottom: 70px;
+}
+.intro__line{
+  background-color: #fff;
+  margin-bottom: 45px;
+}
+.intro__btn{
+  color: #fff;
+  font-size: 14px;
+  @include mf700;
+  padding: 15px 33px;
+  border: 3px solid #fff;
+  transition: .3s;
+  &:hover{
+    color: $red;
+    border: 3px solid $red;
+  }
+}
+.intro__slider{
+  position: absolute;
+  bottom: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+.intro__slider-inner{
+  display: flex;
+  justify-content: space-between;
+}
+.intro__slider-item{
+  max-width: 280px;
+  &:hover{
+    .intro__slider-line{
+      background-color: $red;
+    }
+    .intro__slider-text{
+      color: $red;
+    }
+  }
+}
+.intro__slider-line{
+  width: 280px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 25px;
+  transition: .3s;
+}
+.intro__slider-text{
+  text-transform: uppercase;
+  @include mf400;
+  font-size: 18px;
+  color: #fff;
+  transition: .3s;
+  span{
+    @include mf700;
+    font-size: 24px;
+  }
+}
 
+// ABOUT
+.about__inner{
+  text-align: center;
+}
+.about__suptitle{
+  margin-bottom: 20px;
+}
+.about__title{
+  margin-bottom: 40px;
+}
+.about__line{
+  margin-bottom: 45px;
+}
+.about__text{
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
 
 
 
