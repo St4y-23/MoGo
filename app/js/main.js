@@ -59,6 +59,10 @@ $('.slider__inner').slick({
   }, 700);                                                /* Скорость прокрутки где 1000 - 1 секунда */
 });
 
+$(".ham").click(function(){
+  $(".header__menu").slideToggle();
+});
+
 
 
 });
