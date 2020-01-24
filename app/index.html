@@ -7,8 +7,16 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap"
 		rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<title>MoGo</title>
 	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -51,7 +59,7 @@
 			</header>
 
 			<!-- INTRO -->
-			<section class="intro">
+			<div class="intro">
 				<div class="container-fluid">
 					<div class="intro__bg" style="background-image: url(img/intro-bg.jpg);">
 						<div class="container">
@@ -86,21 +94,21 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
 			<!-- ABOUT -->
-			<section class="about" id="about">
+			<div class="about" id="about">
 				<div class="container">
 					<div class="about__inner">
-						<div class="suptitle">What we do</div>
-						<div class="title">Story about us</div>
-						<div class="line"></div>
-						<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						<div class="suptitle wow zoomIn">What we do</div>
+						<div class="title wow zoomIn">Story about us</div>
+						<div class="line wow zoomIn"></div>
+						<div class="text wow zoomIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
 							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 							laboris nisi ut aliquip ex ea commodo consequat. </div>
 						<div class="about__item-wrapper">
 
-							<div class="about__item">
+							<div class="about__item wow fadeInUp" data-wow-delay=".2s">
 								<a class="about__item-rectangle" href="#">
 									<div class="about__item-img"><img src="img/about-1.jpg" alt="">
 										<div class="about__item-img__gradient"></div>
@@ -109,7 +117,7 @@
 								</a>
 							</div>
 
-							<div class="about__item">
+							<div class="about__item wow fadeInUp" data-wow-delay=".4s">
 								<a class="about__item-rectangle" href="#">
 									<div class="about__item-img"><img src="img/about-2.jpg" alt="">
 										<div class="about__item-img__gradient"></div>
@@ -118,7 +126,7 @@
 								</a>
 							</div>
 
-							<div class="about__item">
+							<div class="about__item wow fadeInUp" data-wow-delay=".6s">
 								<a class="about__item-rectangle" href="#">
 									<div class="about__item-img"><img src="img/about-3.jpg" alt="">
 										<div class="about__item-img__gradient"></div>
@@ -130,41 +138,41 @@
 						</div>
 					</div>
 				</div>
-				<div class="about-facts">
+				<div class="about-facts" id="counter">
 					<div class="container">
 						<div class="about-facts__inner">
 
 							<div class="about-facts__item">
 								<div class="about-facts__item-wrapper">
-									<div class="about-facts__item-num">42</div>
+									<div class="about-facts__item-num" data-count="42">0</div>
 									<div class="about-facts__item-info">Web Design Projects</div>
 								</div>
 							</div>
 
 							<div class="about-facts__item">
 								<div class="about-facts__item-wrapper">
-									<div class="about-facts__item-num">123</div>
+									<div class="about-facts__item-num" data-count="123">0</div>
 									<div class="about-facts__item-info">happy client</div>
 								</div>
 							</div>
 
 							<div class="about-facts__item">
 								<div class="about-facts__item-wrapper">
-									<div class="about-facts__item-num">15</div>
+									<div class="about-facts__item-num" data-count="15">0</div>
 									<div class="about-facts__item-info">award winner</div>
 								</div>
 							</div>
 
 							<div class="about-facts__item">
 								<div class="about-facts__item-wrapper">
-									<div class="about-facts__item-num">99</div>
+									<div class="about-facts__item-num" data-count="99">0</div>
 									<div class="about-facts__item-info">cup of coffee</div>
 								</div>
 							</div>
 
 							<div class="about-facts__item">
 								<div class="about-facts__item-wrapper">
-									<div class="about-facts__item-num">24</div>
+									<div class="about-facts__item-num" data-count="24">0</div>
 									<div class="about-facts__item-info">members</div>
 								</div>
 							</div>
@@ -172,17 +180,17 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
 			<!-- SERVICE -->
-			<section class="service" id="service">
+			<div class="service" id="service">
 				<div class="container">
-					<div class="suptitle">We work with</div>
-					<div class="title">Amazing Services</div>
-					<div class="line"></div>
+					<div class="suptitle wow zoomIn">We work with</div>
+					<div class="title wow zoomIn">Amazing Services</div>
+					<div class="line wow zoomIn"></div>
 					<div class="service__inner">
 
-						<div class="service__item">
+						<div class="service__item wow fadeInUp" data-wow-delay=".1s">
 							<div class="service__item-wrapper service__item-svg1">
 								<div class="service__item-title">Photography</div>
 								<div class="service__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -190,7 +198,7 @@
 							</div>
 						</div>
 
-						<div class="service__item">
+						<div class="service__item wow fadeInUp" data-wow-delay=".1s">
 							<div class="service__item-wrapper service__item-svg2">
 								<div class="service__item-title">Web Design</div>
 								<div class="service__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -198,7 +206,7 @@
 							</div>
 						</div>
 
-						<div class="service__item">
+						<div class="service__item wow fadeInUp" data-wow-delay=".1s">
 							<div class="service__item-wrapper service__item-svg3">
 								<div class="service__item-title">Creativity</div>
 								<div class="service__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -206,7 +214,7 @@
 							</div>
 						</div>
 
-						<div class="service__item">
+						<div class="service__item wow fadeInUp" data-wow-delay=".2s">
 							<div class="service__item-wrapper service__item-svg4">
 								<div class="service__item-title">seo</div>
 								<div class="service__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -214,7 +222,7 @@
 							</div>
 						</div>
 
-						<div class="service__item">
+						<div class="service__item wow fadeInUp" data-wow-delay=".2s">
 							<div class="service__item-wrapper service__item-svg5">
 								<div class="service__item-title">Css/Html</div>
 								<div class="service__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -222,7 +230,7 @@
 							</div>
 						</div>
 
-						<div class="service__item">
+						<div class="service__item wow fadeInUp" data-wow-delay=".2s">
 							<div class="service__item-wrapper service__item-svg6">
 								<div class="service__item-title">digital</div>
 								<div class="service__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -232,34 +240,34 @@
 
 					</div>
 				</div>
-			</section>
+			</div>
 
 			<!-- FEATURE -->
-			<section class="feature">
+			<div class="feature">
 				<div class="container-fluid">
 					<div class="feature__bg" style="background-image: url(img/feature-bg.jpg)">
 						<div class="container">
-							<div class="suptitle">For all devices</div>
-							<div class="title">Unique design</div>
-							<div class="line"></div>
-							<div class="feature__img"><img src="img/tablet.png" alt=""></div>
+							<div class="suptitle wow zoomIn">For all devices</div>
+							<div class="title wow zoomIn">Unique design</div>
+							<div class="line wow zoomIn"></div>
+							<div class="feature__img wow fadeInUp"><img src="img/tablet.png" alt=""></div>
 						</div>
 					</div>
 				</div>
-			</section> 
+			</div>
 
 			<!-- EXAMPLES -->
-			<section class="examples">
+			<div class="examples">
 				<div class="container">
-					<div class="suptitle">Service</div>
-					<div class="title">what we do</div>
-					<div class="line"></div>
-					<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					<div class="suptitle wow zoomIn">Service</div>
+					<div class="title wow zoomIn">what we do</div>
+					<div class="line wow zoomIn"></div>
+					<div class="text wow zoomIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 						aliquip ex ea commodo consequat. </div>
 					<div class="examples__inner">
-						<div class="examples__img"><img src="img/examples-foto.jpg" alt=""></div>
-						<div class="examples__wrapper">
+						<div class="examples__img wow fadeInLeft"><img class="img" src="img/examples-foto.jpg" alt=""></div>
+						<div class="examples__wrapper wow fadeInRight">
 
 							<div class="accordion active">
 								<div class="accordion_tab active">
@@ -336,7 +344,7 @@
 
 							<div class="slider__item">
 								<div class="slider__item-wrapper">
-									<div class="slider__item-logo"></div>
+									<div class="slider__item-logo"><img class="img" src="img/svg/messages.svg" alt=""></div>
 									<div class="slider__item-info">
 										<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
@@ -347,22 +355,22 @@
 
 							<div class="slider__item">
 								<div class="slider__item-wrapper">
-									<div class="slider__item-logo"></div>
+									<div class="slider__item-logo"><img class="img" src="img/svg/messages.svg" alt=""></div>
 									<div class="slider__item-info">
 										<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-										<div class="slider__item-text">Jon Doe</div>
+											labore et dolore magna aliqua.”</p>
+										<div class="slider__item-text">Jane Doe</div>
 									</div>
 								</div>
 							</div>
 
 							<div class="slider__item">
 								<div class="slider__item-wrapper">
-									<div class="slider__item-logo"></div>
+									<div class="slider__item-logo"><img class="img" src="img/svg/messages.svg" alt=""></div>
 									<div class="slider__item-info">
 										<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-										<div class="slider__item-text">Jon Doe</div>
+										<div class="slider__item-text">Sarah Fox</div>
 									</div>
 								</div>
 							</div>
@@ -370,22 +378,22 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
 			<!-- TEAM -->
-			<!-- <section class="team">
+			<div class="team">
 				<div class="container">
-					<div class="suptitle">Who we are</div>
-					<div class="title">Meet our team</div>
-					<div class="line"></div>
-					<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+					<div class="suptitle wow zoomIn">Who we are</div>
+					<div class="title wow zoomIn">Meet our team</div>
+					<div class="line wow zoomIn"></div>
+					<div class="text wow zoomIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 						aliquip ex ea commodo consequat. </div>
 					<div class="team__inner">
 
-						<div class="team__item">
+						<div class="team__item wow fadeInUp" data-wow-delay=".1s">
 							<div class="team__item-rectangle" href="#">
-								<div class="team__item-img"><img src="img/team-1.jpg" alt="">
+								<div class="team__item-img"><img class="img" src="img/team-1.jpg" alt="">
 									<div class="team__item-img__gradient"></div>
 								</div>
 								<div class="team__icons-wrapper">
@@ -428,9 +436,9 @@
 							<div class="team__item-post">Graphic Design</div>
 						</div>
 
-						<div class="team__item">
+						<div class="team__item wow fadeInUp" data-wow-delay=".2s">
 							<div class="team__item-rectangle" href="#">
-								<div class="team__item-img"><img src="img/team-2.jpg" alt="">
+								<div class="team__item-img"><img class="img" src="img/team-2.jpg" alt="">
 									<div class="team__item-img__gradient"></div>
 								</div>
 								<div class="team__icons-wrapper">
@@ -473,9 +481,9 @@
 							<div class="team__item-post">Branding/UX design</div>
 						</div>
 
-						<div class="team__item">
+						<div class="team__item wow fadeInUp" data-wow-delay=".3s">
 							<div class="team__item-rectangle" href="#">
-								<div class="team__item-img"><img src="img/team-3.jpg" alt="">
+								<div class="team__item-img"><img class="img" src="img/team-3.jpg" alt="">
 									<div class="team__item-img__gradient"></div>
 								</div>
 								<div class="team__icons-wrapper">
@@ -523,90 +531,98 @@
 				<div class="team__logo">
 					<div class="container">
 						<div class="team__logo-inner">
-							<div class="team__logo-item"><img src="img/team-logo-1.png" alt=""></div>
-							<div class="team__logo-item"><img src="img/team-logo-2.png" alt=""></div>
-							<div class="team__logo-item"><img src="img/team-logo-3.png" alt=""></div>
-							<div class="team__logo-item"><img src="img/team-logo-4.png" alt=""></div>
-							<div class="team__logo-item"><img src="img/team-logo-5.png" alt=""></div>
-							<div class="team__logo-item"><img src="img/team-logo-6.png" alt=""></div>
+							<div class="team__logo-item wow fadeIn" data-wow-delay=".3s"><img src="img/team-logo-1.png" alt=""></div>
+							<div class="team__logo-item wow fadeIn" data-wow-delay=".2s"><img src="img/team-logo-2.png" alt=""></div>
+							<div class="team__logo-item wow fadeIn" data-wow-delay=".1s"><img src="img/team-logo-3.png" alt=""></div>
+							<div class="team__logo-item wow fadeIn" data-wow-delay=".1s"><img src="img/team-logo-4.png" alt=""></div>
+							<div class="team__logo-item wow fadeIn" data-wow-delay=".2s"><img src="img/team-logo-5.png" alt=""></div>
+							<div class="team__logo-item wow fadeIn" data-wow-delay=".3s"><img src="img/team-logo-6.png" alt=""></div>
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</div>
 
 			<!-- WORK -->
-			<!-- <section class="work" id="work">
-				<div class="suptitle">What we do</div>
-				<div class="title">some of our work</div>
-				<div class="line"></div>
-				<div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+			<div class="work" id="work">
+				<div class="suptitle wow zoomIn">What we do</div>
+				<div class="title wow zoomIn">some of our work</div>
+				<div class="line wow zoomIn"></div>
+				<div class="text wow zoomIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 					labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 					aliquip ex ea commodo consequat. </div>
 				<div class="container-fluid">
 					<div class="work__inner">
 
-						<a class="work-img grid1" href="#"><img src="img/work-1.jpg" alt="">
-							<div class="work-img__gradient"></div>
-							<div class="work-img__link">
-								<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
-								<div class="work-img__link-title">creatively designed</div>
-								<div class="work-img__link-info">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
+						<div class="work__col">
+							<a class="work-img wow fadeIn" data-wow-delay=".1s" href="#"><img class="img" src="img/work-1.jpg" alt="">
+								<div class="work-img__gradient"></div>
+								<div class="work-img__link">
+									<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
+									<div class="work-img__link-title">creatively designed</div>
+									<div class="work-img__link-info">Lorem ipsum dolor sit</div>
+								</div>
+							</a>
 
-						<a class="work-img grid2" href="#"><img src="img/work-2.jpg" alt="">
-							<div class="work-img__gradient"></div>
-							<div class="work-img__link">
-								<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
-								<div class="work-img__link-title">creatively designed</div>
-								<div class="work-img__link-info">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
+							<a class="work-img wow fadeIn" data-wow-delay=".2s" data-wow-offset="0" href="#"><img class="img" src="img/work-2.jpg" alt="">
+								<div class="work-img__gradient"></div>
+								<div class="work-img__link">
+									<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
+									<div class="work-img__link-title">creatively designed</div>
+									<div class="work-img__link-info">Lorem ipsum dolor sit</div>
+								</div>
+							</a>
+						</div>
 
-						<a class="work-img grid3" href="#"><img src="img/work-3.jpg" alt="">
-							<div class="work-img__gradient"></div>
-							<div class="work-img__link">
-								<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
-								<div class="work-img__link-title">creatively designed</div>
-								<div class="work-img__link-info">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
+						<div class="work__col">
+							<a class="work-img wow fadeIn" data-wow-delay=".3s" href="#"><img class="img" src="img/work-5.jpg" alt="">
+								<div class="work-img__gradient"></div>
+								<div class="work-img__link">
+									<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
+									<div class="work-img__link-title">creatively designed</div>
+									<div class="work-img__link-info">Lorem ipsum dolor sit</div>
+								</div>
+							</a>
 
-						<a class="work-img grid4" href="#"><img src="img/work-4.jpg" alt="">
-							<div class="work-img__gradient"></div>
-							<div class="work-img__link">
-								<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
-								<div class="work-img__link-title">creatively designed</div>
-								<div class="work-img__link-info">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
+							<a class="work-img wow fadeIn" data-wow-delay=".4s" data-wow-offset="0" href="#"><img class="img" src="img/work-4.jpg" alt="">
+								<div class="work-img__gradient"></div>
+								<div class="work-img__link">
+									<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
+									<div class="work-img__link-title">creatively designed</div>
+									<div class="work-img__link-info">Lorem ipsum dolor sit</div>
+								</div>
+							</a>
+						</div>
 
-						<a class="work-img grid5" href="#"><img src="img/work-5.jpg" alt="">
-							<div class="work-img__gradient"></div>
-							<div class="work-img__link">
-								<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
-								<div class="work-img__link-title">creatively designed</div>
-								<div class="work-img__link-info">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
+						<div class="work__col">
+							<a class="work-img wow fadeIn" data-wow-delay=".5s" href="#"><img class="img" src="img/work-3.jpg" alt="">
+								<div class="work-img__gradient"></div>
+								<div class="work-img__link">
+									<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
+									<div class="work-img__link-title">creatively designed</div>
+									<div class="work-img__link-info">Lorem ipsum dolor sit</div>
+								</div>
+							</a>
+						</div>
 
-						<a class="work-img grid6" href="#"><img src="img/work-6.jpg" alt="">
-							<div class="work-img__gradient"></div>
-							<div class="work-img__link">
-								<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
-								<div class="work-img__link-title">creatively designed</div>
-								<div class="work-img__link-info">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
+						<div class="work__col">
+							<a class="work-img wow fadeIn" data-wow-delay=".6s" href="#"><img class="img" src="img/work-7.jpg" alt="">
+								<div class="work-img__gradient"></div>
+								<div class="work-img__link">
+									<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
+									<div class="work-img__link-title">creatively designed</div>
+									<div class="work-img__link-info">Lorem ipsum dolor sit</div>
+								</div>
+							</a>
 
-						<a class="work-img grid7" href="#"><img src="img/work-7.jpg" alt="">
-							<div class="work-img__gradient"></div>
-							<div class="work-img__link">
-								<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
-								<div class="work-img__link-title">creatively designed</div>
-								<div class="work-img__link-info">Lorem ipsum dolor sit</div>
-							</div>
-						</a>
+							<a class="work-img wow fadeIn" data-wow-delay=".7s" data-wow-offset="0" href="#"><img class="img" src="img/work-6.jpg" alt="">
+								<div class="work-img__gradient"></div>
+								<div class="work-img__link">
+									<div class="work-img__link-logo"><img src="img/svg/pic-white.svg" alt=""></div>
+									<div class="work-img__link-title">creatively designed</div>
+									<div class="work-img__link-info">Lorem ipsum dolor sit</div>
+								</div>
+							</a>
+						</div>
 
 					</div>
 				</div>
@@ -617,7 +633,7 @@
 
 							<div class="slider__item">
 								<div class="slider__item-wrapper">
-									<div class="slider__item-img"><img src="img/work-slider.png" alt=""></div>
+									<div class="slider__item-img"><img class="img" src="img/work-slider.png" alt=""></div>
 									<div class="slider__item-info">
 										<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
@@ -628,7 +644,7 @@
 
 							<div class="slider__item">
 								<div class="slider__item-wrapper">
-									<div class="slider__item-img"><img src="img/work-slider.png" alt=""></div>
+									<div class="slider__item-img"><img class="img" src="img/work-slider.png" alt=""></div>
 									<div class="slider__item-info">
 										<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
@@ -639,7 +655,7 @@
 
 							<div class="slider__item">
 								<div class="slider__item-wrapper">
-									<div class="slider__item-img"><img src="img/work-slider.png" alt=""></div>
+									<div class="slider__item-img"><img class="img" src="img/work-slider.png" alt=""></div>
 									<div class="slider__item-info">
 										<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 											labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
@@ -652,19 +668,19 @@
 					</div>
 				</div>
 
-			</section> -->
+			</div>
 
 			<!-- COMMENTS -->
-			<!-- <section class="comments">
+			<div class="comments">
 				<div class="container-fluid">
 					<div class="comments__bg" style="background-image: url(../img/comment-bg.jpg)">
 						<div class="container">
-							<div class="suptitle">Happy Clients</div>
-							<div class="title">What people say</div>
-							<div class="line"></div>
+							<div class="suptitle wow zoomIn">Happy Clients</div>
+							<div class="title wow zoomIn">What people say</div>
+							<div class="line wow zoomIn"></div>
 							<div class="comments__inner">
 
-								<div class="comments__item">
+								<div class="comments__item wow fadeInLeft" data-wow-delay=".1s">
 									<div class="comments__item-img"><img src="img/comments/comments-1.jpg" alt=""></div>
 									<div class="comments__item-wrapper">
 										<div class="comments__item-name">Matthew Dix</div>
@@ -675,7 +691,7 @@
 									</div>
 								</div>
 
-								<div class="comments__item">
+								<div class="comments__item wow fadeInRight" data-wow-delay=".1s">
 									<div class="comments__item-img"><img src="img/comments/comments-2.jpg" alt=""></div>
 									<div class="comments__item-wrapper">
 										<div class="comments__item-name">Nick Karvounis</div>
@@ -686,7 +702,7 @@
 									</div>
 								</div>
 
-								<div class="comments__item">
+								<div class="comments__item wow fadeInLeft" data-wow-delay=".2s">
 									<div class="comments__item-img"><img src="img/comments/comments-3.jpg" alt=""></div>
 									<div class="comments__item-wrapper">
 										<div class="comments__item-name">Jaelynn Castillo </div>
@@ -697,7 +713,7 @@
 									</div>
 								</div>
 
-								<div class="comments__item">
+								<div class="comments__item wow fadeInRight" data-wow-delay=".2s">
 									<div class="comments__item-img"><img src="img/comments/comments-4.jpg" alt=""></div>
 									<div class="comments__item-wrapper">
 										<div class="comments__item-name">Mike Petrucci</div>
@@ -712,18 +728,18 @@
 						</div>
 					</div>
 				</div>
-			</section> -->
+			</div>
 
 			<!-- BLOG -->
-			<!-- <section class="blog" id="blog">
+			<div class="blog" id="blog">
 				<div class="container">
-					<div class="suptitle">Our stories</div>
-					<div class="title">Latest blog</div>
-					<div class="line"></div>
+					<div class="suptitle wow zoomIn">Our stories</div>
+					<div class="title wow zoomIn">Latest blog</div>
+					<div class="line wow zoomIn"></div>
 					<div class="blog__inner">
 
-						<div class="blog__item">
-							<div class="blog__item-img"><img src="img/blog/blog-1.jpg" alt="">
+						<div class="blog__item wow fadeInUp" data-wow-delay=".2s">
+							<div class="blog__item-img"><img class="img" src="img/blog/blog-1.jpg" alt="">
 								<div class="blog__item-number">15<br><span>Jan</span></div>
 							</div>
 							<div class="blog__item-title">Lorem ipsum dolor sit amet</div>
@@ -735,8 +751,8 @@
 							</div>
 						</div>
 
-						<div class="blog__item">
-							<div class="blog__item-img"><img src="img/blog/blog-2.jpg" alt="">
+						<div class="blog__item wow fadeInUp" data-wow-delay=".1s">
+							<div class="blog__item-img"><img class="img" src="img/blog/blog-2.jpg" alt="">
 								<div class="blog__item-number">14<br><span>Jan</span></div>
 							</div>
 							<div class="blog__item-title">Lorem ipsum dolor sit amet</div>
@@ -748,8 +764,8 @@
 							</div>
 						</div>
 
-						<div class="blog__item">
-							<div class="blog__item-img"><img src="img/blog/blog-3.jpg" alt="">
+						<div class="blog__item wow fadeInUp" data-wow-delay=".2s">
+							<div class="blog__item-img"><img class="img" src="img/blog/blog-3.jpg" alt="">
 								<div class="blog__item-number">12<br><span>Jan</span></div>
 							</div>
 							<div class="blog__item-title">Lorem ipsum dolor sit amet</div>
@@ -763,10 +779,10 @@
 
 					</div>
 				</div>
-			</section> -->
+			</div>
 
 			<!-- MAP -->
-			<!-- <section class="map" id="contact">
+			<div class="map" id="contact">
 				<div class="container-fluid">
 					<a class="map__bg" style="background-image: url(../img/map-bg.jpg)"
 						href="https://goo.gl/maps/r11k6DVnwQQxbNECA" target="_blank">
@@ -781,14 +797,14 @@
 						</div>
 					</a>
 				</div>
-			</section> -->
+			</div>
 
 		</div>
-		<!-- <footer class="footer">
+		<footer class="footer">
 			<div class="container">
 				<div class="footer__inner">
 
-					<div class="footer__main">
+					<div class="footer__main wow fadeInLeft">
 						<a class="header__logo" href="#">MoGo</a>
 						<div class="footer__main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 							tempor incididunt
@@ -877,35 +893,39 @@
 						</form>
 					</div>
 
-					<div class="footer__blog">
+					<div class="footer__blog wow fadeIn">
 						<div class="footer__title">blogs</div>
 
-						<div class="footer__blog-item">
-							<a class="footer__blog-photo" href="#"><img src="img/footer/footer-blog-1.jpg" alt=""></a>
-							<div class="footer__blog-content">
-								<a class="footer__blog-info" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-								<div class="footer__blog-date">Jan 9, 2016</div>
-							</div>
-						</div>
+						<div class="footer__blog-inner">
 
-						<div class="footer__blog-item">
-							<a class="footer__blog-photo" href="#"><img src="img/footer/footer-blog-2.jpg" alt=""></a>
-							<div class="footer__blog-content">
-								<a class="footer__blog-info" href="#">Consectetur adipiscing elit, sed do eiusmod tempor</a>
-								<div class="footer__blog-date">Jan 9, 2016</div>
+							<div class="footer__blog-item">
+								<a class="footer__blog-photo" href="#"><img src="img/footer/footer-blog-1.jpg" alt=""></a>
+								<div class="footer__blog-content">
+									<a class="footer__blog-info" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+									<div class="footer__blog-date">Jan 9, 2016</div>
+								</div>
 							</div>
-						</div>
 
-						<div class="footer__blog-item">
-							<a class="footer__blog-photo" href="#"><img src="img/footer/footer-blog-3.jpg" alt=""></a>
-							<div class="footer__blog-content">
-								<a class="footer__blog-info" href="#">sed do eiusmod tempor incididunt ut labore</a>
-								<div class="footer__blog-date">Jan 9, 2016</div>
+							<div class="footer__blog-item">
+								<a class="footer__blog-photo" href="#"><img src="img/footer/footer-blog-2.jpg" alt=""></a>
+								<div class="footer__blog-content">
+									<a class="footer__blog-info" href="#">Consectetur adipiscing elit, sed do eiusmod tempor</a>
+									<div class="footer__blog-date">Jan 9, 2016</div>
+								</div>
 							</div>
-						</div>
 
+							<div class="footer__blog-item">
+								<a class="footer__blog-photo" href="#"><img src="img/footer/footer-blog-3.jpg" alt=""></a>
+								<div class="footer__blog-content">
+									<a class="footer__blog-info" href="#">sed do eiusmod tempor incididunt ut labore</a>
+									<div class="footer__blog-date">Jan 9, 2016</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
-					<div class="footer__insta">
+
+					<div class="footer__insta wow fadeInRight">
 						<div class="footer__title">instagram</div>
 						<div class="footer__insta-item">
 							<img class="footer__insta-photo" src="img/footer/insta-1.jpg" alt="">
@@ -922,7 +942,7 @@
 					</div>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 	</div>
 
 

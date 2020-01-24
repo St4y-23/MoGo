@@ -16,6 +16,16 @@ $('.slider__inner').slick({
   slidesToScroll: 1,
   prevArrow: '<button type="button" class="slick-prev arrow__prev"><img src="img/svg/arrow-left.svg" alt=""></button>',
   nextArrow: '<button type="button" class="slick-next arrow__next"><img src="img/svg/arrow-right.svg" alt=""></button>',
+  responsive: [
+    {
+      breakpoint: 1230,
+      settings: {
+        dots: true,
+        arrows: false,
+        fade: true,
+      }
+    },
+  ]
 });
 
  // Fixed header
@@ -61,6 +71,58 @@ $('.slider__inner').slick({
 
 $(".ham").click(function(){
   $(".header__menu").slideToggle();
+});
+
+
+// WOW
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       200,          // distance to the element when triggering the animation (default is 0)
+    mobile:       false,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
+
+// numbers
+var a = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.about-facts__item-num').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 1500,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+          }
+
+        });
+    });
+    a = 1;
+  }
+
 });
 
 
