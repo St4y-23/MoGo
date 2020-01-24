@@ -14,6 +14,10 @@ a{
 	text-decoration: none;
 	color: $text;
 }
+p{
+	padding: 0;
+	margin: 0;
+}
 ul,
 li{
 	margin: 0;
@@ -27,17 +31,20 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
-	line-height: 24px;
 	color: $text;
+	min-width: 320px;
+	overflow-x: hidden;
 }
 // FOOTER к низу
 .wrapper{
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+	overflow-x: hidden;
 }
 .content{
 	flex: 1 0 auto;
+	overflow-x: hidden;
 }
 .footer{
 	flex: 0 0 auto;
@@ -48,7 +55,7 @@ body{
 	margin: 0 auto;
 }
 .container{
-	max-width: 1170px;
+	max-width: 1230px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -56,14 +63,74 @@ body{
 	@include kf400;
 	font-size: 24px;
 	color: #333333;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 0 10px;
 }
 .title{
 	@include mf700;
+	text-transform: uppercase;
 	font-size: 30px;
 	color: #333333;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 0 10px;
 }
 .line{
 	width: 60px;
 	height: 3px;
+	margin: 0 auto 45px;
 	background-color: $red;
+}
+.text{
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto 90px;
+	padding: 0 10px;
+}
+.img{
+	display: block;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+.slick-dots{
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	.slick-active{
+		background-color: $red;
+		width: 45px;
+		border-radius: 15px;
+	}
+	li{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		margin: 0 5px;
+		background-color: $text;
+		cursor: pointer;
+		transition: .3s;
+	}
+	button{
+		font-size: 0;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient($red, $yellow);
+	border-radius: 10px;
+}
+::-webkit-scrollbar
+{
+	background: $red;
+	// border-radius: 10px;
+	width: 12px;
+	overflow: hidden;
 }
